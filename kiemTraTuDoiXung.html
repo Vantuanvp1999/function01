@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Enter a Word");
+    function isPalindrome(a){
+        a.trim();
+        a.split("");
+        let b = 0;
+        let c = a.length - 1;
+        let count = false
+        while (c > b) {
+            if (a[c] == a[b])   {
+                count = true;
+            }
+            c--;
+            b++;
+
+        }
+        if (count) {
+            alert(`${a} là từ đối xứng`);
+        }
+        else{
+            alert (`${a} không phải là từ đối xứng`);
+        }
+    }
+    isPalindrome(a);
+</script>
+</body>
+</html>
