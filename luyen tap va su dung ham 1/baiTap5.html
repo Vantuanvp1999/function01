@@ -8,6 +8,7 @@
 <script>
   let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
   let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+  let star = prompt("nhập vào ngôi sao");
 function check_star(star) {
 
     let star_index =-1;
@@ -24,8 +25,8 @@ if (star_index !== -1){
   }
 document.write(result);
 }
-let star = prompt("nhập vào ngôi sao");
-  document.write(check_star(star));
+
+  check_star(star);
 </script>
 </body>
 </html>
